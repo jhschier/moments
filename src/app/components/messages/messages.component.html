@@ -1,7 +1,7 @@
 <div class="message" *ngIf="messageServices.message">
   <div class="message-header">
     <h2>System's Message:</h2>
-    <button class="clear">
+    <button class="clear" (click)="messageServices.clear()">
       <fa-icon [icon]="faTimes"></fa-icon>
     </button>
   </div>

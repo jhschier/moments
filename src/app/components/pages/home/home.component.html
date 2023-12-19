@@ -1,1 +1,10 @@
-<p>Home page</p>
+<div class="home-container">
+  <h1>Check out what people are sharing</h1>
+  <!-- Search form -->
+  <div class="moments-container">
+    <div class="moment-container" *ngFor="let moment of moments">
+      <h2>{{ moment.title }}</h2>
+      <h3>{{ moment.description }}</h3>
+    </div>
+  </div>
+</div>

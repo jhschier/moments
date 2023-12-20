@@ -13,8 +13,9 @@
     <a routerLink="/moments/edit/{{ moment.id }}" class="edit-btn">
       <fa-icon [icon]="faEdit"></fa-icon> Edit
     </a>
-    <button class="remove-btn">
-      <fa-icon [icon]="faTimes"></fa-icon> Delete
+    <button class="remove-btn" (click)="removeHandler(moment.id!)">
+      <fa-icon [icon]="faTimes"></fa-icon>
+      Delete
     </button>
   </div>
   <div class="comments">
